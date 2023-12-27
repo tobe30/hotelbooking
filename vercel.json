@@ -1,10 +1,11 @@
 {
     "version": 2,
     "builds": [
-      { "src": "book/wsgi.py", "use": "@vercel/python" }
+        { "src": "book/wsgi.py", "use": "@vercel/python" }
     ],
     "routes": [
-      { "src": "/(.*)", "dest": "funia/wsgi.py" }
+        { "src": "/(.*)", "dest": "book/wsgi.py" }
     ]
-  }
+}
+
   
